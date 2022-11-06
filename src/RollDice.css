@@ -1,6 +1,19 @@
 .RollDice-die {
-    background-color: rgb(192, 196, 196);
+    
     width: 500px;
     display: flex;
     justify-content: space-around;
+  }
+
+  .RollDice-button {
+    padding: 20px 50px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(131, 207, 207);
+    color: white;
+  }
+
+  .RollDice-button:disabled {
+    background-color: rgb(255, 127, 193);
   }

@@ -5,9 +5,4 @@
   align-items: center;
 }
 
-.App-die {
-  background-color: rgb(192, 196, 196);
-  width: 500px;
-  display: flex;
-  justify-content: space-around;
-}
+

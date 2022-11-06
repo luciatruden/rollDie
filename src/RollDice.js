@@ -1,5 +1,5 @@
 import React from "react";
-import './RollDice';
+import './RollDice.css';
 import Dice from './Dice';
 
 
@@ -7,7 +7,7 @@ function RollButton(props){
 
     return(
         <div className="RollDice">
-            <div className='App-die'>
+            <div className='RollDice-die'>
                 <Dice />
                 <Dice />
             </div>

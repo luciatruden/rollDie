@@ -31,8 +31,8 @@ function RollButton(props){
     return(
         <div className="RollDice">
             <div className='RollDice-die'>
-                <Dice roll={die1} />
-                <Dice roll={die2}/>
+                <Dice roll={die1} isRolling={isRolling} />
+                <Dice roll={die2} isRolling={isRolling} />
             </div>
             { die1 === die2? winMsg : buttonElement}
         </div>

@@ -3,14 +3,14 @@ import './Dice.css';
 
 function Dice(props){
 
-    const { roll } = props;
+    const { roll, isRolling } = props;
 
     let rollClassName = `fas fa-dice-${roll}`;
     
+    console.log(isRolling? "Dice-Rolling":"Dice");
+
     return (
-        <div className="Dice">
-            <i className={rollClassName}></i>
-        </div>
+            <i className={`Dice ${rollClassName} ${isRolling? "Dice-shaking":""}`}></i>
     );
 }
 

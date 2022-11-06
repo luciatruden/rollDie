@@ -6,7 +6,11 @@ import Dice from './Dice';
 function App() {
   return (
     <div className="App">
-      <Dice />
+      <div className='App-die'>
+        <Dice />
+        <Dice />
+      </div>
+      
       <RollButton />
     </div>
   );

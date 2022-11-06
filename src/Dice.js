@@ -3,13 +3,9 @@ import './Dice.css';
 
 function Dice(props){
 
-    function rollDie() {
-        const rolls = ['one', 'two', 'three', 'four', 'five', 'six'];
-        let index = Math.floor(Math.random()*6);
-        return rolls[index];
-    }
+    const { roll } = props;
 
-    let rollClassName = `fas fa-dice-${rollDie()}`;
+    let rollClassName = `fas fa-dice-${roll}`;
     
     return (
         <div className="Dice">
